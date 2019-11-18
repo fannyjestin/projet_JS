@@ -1,4 +1,4 @@
-//************Fonctionalité 1 *****************//
+//************Fonctionnalité 1 *****************//
 
 let footerCounter = 0;
 let footer = document.getElementsByTagName('footer')[0];
@@ -11,7 +11,7 @@ footer.addEventListener("click", addone);
 	};
 
 
-//************Fonctionalité 2 *****************//
+//************Fonctionnalité 2 *****************//
 
 let menuBtn = document.getElementById("navbarHeader");
 
@@ -23,7 +23,7 @@ menuBtn.addEventListener("click", navbartoggle);
 // TOGGLE : fonction qui permet de rajouter une classe si elle n'est pas déjà présente et l'enlever si elle est déjà présente. C'est "toggle". Tu peux l'utiliser ainsi : elementDuDOM.classList.toggle("nomDeLaClasse")
 
 
-//************Fonctionalité 3 *****************//
+//************Fonctionnalité 3 *****************//
 
 let btnEdit = document.getElementsByClassName("btn-outline-secondary")[0];
 	firstCard = document.getElementsByClassName("card-text")[0];
@@ -35,7 +35,7 @@ let btnEdit = document.getElementsByClassName("btn-outline-secondary")[0];
     	firstCard.style.color = "red";
     } ;
 
-//************Fonctionalité 4 *****************//
+//************Fonctionnalité 4 *****************//
 
 
 let btnEdit2 = document.getElementsByClassName("btn-outline-secondary")[1];
@@ -55,7 +55,7 @@ let	secondCard = document.getElementsByClassName("card-text")[1];
 	};
 
 
-//************Fonctionalité 5 *****************//
+//************Fonctionnalité 5 *****************//
 
 
 let navbar = document.getElementsByClassName("navbar")[0];
@@ -73,7 +73,7 @@ console.log(bootstrap);
 		}
 		};
 
-//************Fonctionalité 6 *****************//
+//************Fonctionnalité 6 *****************//
 
 
 let viewLength = document.getElementsByClassName("btn-success").length
@@ -93,12 +93,12 @@ for (let i = 0; i < viewLength; i++) {
 };
 
 
-//************Fonctionalité 7 *****************//
+//************Fonctionnalité 7 *****************//
 
-btnGrey = document.getElementsByClassName("btn-secondary")[0];
+let btnGrey = document.getElementsByClassName("btn-secondary")[0];
 
-old = document.getElementsByClassName("row")[1];
-young = document.getElementsByClassName("col-md-4");
+let old = document.getElementsByClassName("row")[1];
+let young = document.getElementsByClassName("col-md-4");
 
 	btnGrey.addEventListener("click", Fonction2);
 
@@ -106,9 +106,16 @@ young = document.getElementsByClassName("col-md-4");
 		old.prepend(young[5])
 	};
 
+//********** Fonctionnalité 8 *****************//
 
 
+let btnBlue = document.getElementsByClassName("btn-primary")[0];
 
+	btnBlue.addEventListener("click", Fonction3);
+
+	function Fonction3() {
+		old.appendChild(young[0]);
+	};
 
 
 
