@@ -93,9 +93,18 @@ for (let i = 0; i < viewLength; i++) {
 };
 
 
+//************Fonctionalité 7 *****************//
 
+btnGrey = document.getElementsByClassName("btn-secondary")[0];
 
+old = document.getElementsByClassName("row")[1];
+young = document.getElementsByClassName("col-md-4");
 
+	btnGrey.addEventListener("click", Fonction2);
+
+	function Fonction2() {
+		old.prepend(young[5])
+	};
 
 
 
