@@ -14,8 +14,9 @@ footer.addEventListener("click", addone);
 //************Fonctionnalité 2 *****************//
 
 let menuBtn = document.getElementById("navbarHeader");
+let miniBtn = document.getElementsByClassName("navbar-toggler")[0];
 
-menuBtn.addEventListener("click", navbartoggle);
+	miniBtn.addEventListener("click", navbartoggle);
 
 	function navbartoggle() {
   	menuBtn.classList.toggle('collapse');
