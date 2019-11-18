@@ -25,17 +25,31 @@ menuBtn.addEventListener("click", navbartoggle);
 
 //************Fonctionalité 3 *****************//
 
-let btn_edit = document.getElementsByClassName("btn-outline-secondary")[0];
-	first_card = document.getElementsByClassName("card-text")[0];
-	console.log(btn_edit.textContent);
-	console.log(first_card.textContent);
+let btnEdit = document.getElementsByClassName("btn-outline-secondary")[0];
+	firstCard = document.getElementsByClassName("card-text")[0];
+	console.log(btnEdit.textContent);
+	console.log(firstCard.textContent);
 
-    btn_edit.addEventListener("click", red);
-    function red() {
-    	first_card.style.color = "red";
+    btnEdit.addEventListener("click", Red);
+    function Red() {
+    	firstCard.style.color = "red";
     } ;
 
 //************Fonctionalité 4 *****************//
 
 
+let btnEdit2 = document.getElementsByClassName("btn-outline-secondary")[1];
+let	secondCard = document.getElementsByClassName("card-text")[1];
 
+	console.log(btnEdit2.textContent);
+	console.log(secondCard.textContent);
+
+    btnEdit2.addEventListener("click", Green);
+
+    function Green() {
+		if (secondCard.style.color === 'green') { 
+			secondCard.style.color = '' ; 
+		} else {
+			secondCard.style.color = 'green';
+		}
+	};
