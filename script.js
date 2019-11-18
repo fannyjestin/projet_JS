@@ -53,3 +53,54 @@ let	secondCard = document.getElementsByClassName("card-text")[1];
 			secondCard.style.color = 'green';
 		}
 	};
+
+
+//************Fonctionalité 5 *****************//
+
+
+let navbar = document.getElementsByClassName("navbar")[0];
+let bootstrap = document.getElementsByTagName('link')[0];
+
+console.log(bootstrap);
+
+	navbar.addEventListener("dblclick", destroyCDN);
+
+	function destroyCDN() {
+		if  (bootstrap.rel == "stylesheet") { 
+			bootstrap.rel = "styleDisabled";
+		} else {
+			bootstrap.rel = "stylesheet";
+		}
+		};
+
+//************Fonctionalité 6 *****************//
+
+
+let viewLength = document.getElementsByClassName("btn-success").length
+
+console.log(viewLength)
+
+for (let i = 0; i < viewLength; i++) {
+
+	let btnView = document.getElementsByClassName("btn-success");
+
+	btnView[i].addEventListener("mouseover", Fonction1);
+
+	function Fonction1() {
+		document.getElementsByClassName("card-text")[i].classList.toggle("d-none"); //d-none on enleve le texte
+		document.getElementsByClassName("card-img-top")[i].classList.toggle("w-25"); //d-none on enleve le texte
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
